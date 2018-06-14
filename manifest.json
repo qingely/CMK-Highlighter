@@ -1,0 +1,53 @@
+{
+   "background": {
+      "scripts": [
+         "js/background.js"
+      ]
+   },
+   "browser_action": {
+      "browser_style": true,
+      "default_icon": {
+         "19": "img/19.png",
+         "38": "img/38.png"
+      },
+      "default_popup": "popup/popup.html",
+      "default_title": "Chrome-Multi-Keywords-Highlighter"
+   },
+   "content_scripts": [
+      {
+         "css": [
+            "css/content.css"
+         ],
+         "js": [
+            "js/content.js"
+         ],
+         "matches": [
+            "http://*/*",
+            "https://*/*"
+         ],
+         "run_at": "document_end"
+      }
+   ],
+   "description": "在任意网页中以不同颜色标识出你所找的关键词/句",
+   "homepage_url": "https://github.com/qingely/CMK-highlighter",
+   "icons": {
+      "128": "img/128.png",
+      "16": "img/16.png",
+      "19": "img/19.png",
+      "256": "img/256.png",
+      "24": "img/24.png",
+      "32": "img/32.png",
+      "38": "img/38.png",
+      "48": "img/48.png",
+      "64": "img/64.png",
+      "72": "img/72.png",
+      "96": "img/96.png"      
+   },
+   "manifest_version": 2,
+   "name": "Chrome-Multi-Keywords-Highlighter",
+   "permissions": [
+      "storage", "tabs"
+   ],
+   "short_name": "CMK-highlighter",
+   "version": "1.0.0"
+}

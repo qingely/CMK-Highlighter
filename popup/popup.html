@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-10 small-offset-2">
+          <h1>CMK-Highlighter</h1>
+        </div>
+        <div class="cell small-12">
+          <textarea id="textareaKeywords" rows="2" placeholder="输入关键词，以半角逗号作分隔符"></textarea>
+        </div>
+        <div class="cell small-12">
+          <h2>More options</h2>
+      <ul class="checkbox-list">
+      <li>
+        <input id="checkboxShowOccurrences" type="checkbox" />
+        <label for="checkboxShowOccurrences">显示匹配数</label>
+      </li>
+      <li>
+        <input id="checkboxSubtleHighlighting" type="checkbox" />
+        <label for="checkboxSubtleHighlighting">不突出显示</label>
+      </li>
+      </ul>
+        </div>
+        <div class="cell small-12">
+          <button id="buttonSave" class="button small" type="submit">Save</button>
+          <button id="buttonCancel" class="button secondary small" type="reset">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <!-- WebExtension JavaScript -->
+    <script src="../js/common.js"></script>
+    <script src="../js/popup.js"></script>
+  </body>
+</html>
